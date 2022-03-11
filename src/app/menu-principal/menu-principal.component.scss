@@ -1,0 +1,60 @@
+.txtMenu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500     !important;
+}
+
+mat-body {
+    white-space: pre-wrap !important;
+}
+
+.btnMenuAbre {
+  border-style: none;
+  background-color: #fff;
+}
+
+.buttonMenu {
+  border-style: none;
+  color: white;
+  background-color: #424242;
+  font-size: larger;
+  padding-left: 15%;
+}
+
+// .example-container {
+//     width: 500px;
+//     height: 300px;
+//     border: 1px solid rgba(0, 0, 0, 0.5);
+//   }
+  
+  // .example-sidenav-content {
+  //   display: flex;
+  //   height: 100%;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+  
+  // .example-sidenav {
+  //   padding: 20px;
+  // }
+
+  .mat-drawer-container {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-style: none;
+  }
+
+  .example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .mat-drawer {
+    // background-color: #eec6ac !important;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+  }
+  

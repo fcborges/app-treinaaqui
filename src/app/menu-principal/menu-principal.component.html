@@ -1,0 +1,104 @@
+<!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Redial</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voice mail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>
+
+# link para icones : https://fontawesome.com/v4/icons/
+-->
+
+<!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <i class="material-icons" style="font-size:36px">menu</i>
+</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="home()">
+        <i class="fas fa-home">&nbsp;
+            <span class="txtMenu">Home</span>
+        </i>
+    </button>
+    <button mat-menu-item (click)="cursos()">
+        <i class="fas fa-laptop-code">&nbsp;
+            <span class="txtMenu">Cursos</span>
+        </i>
+    </button>
+    <button mat-menu-item (click)="medicinaProfissao()">
+        <i class="fa fa-user-md">&nbsp;
+            <span class="txtMenu">Medicina</span>
+        </i>
+    </button>
+    <button mat-menu-item (click)="enem()">
+        <i class="fas fa-tasks">&nbsp;
+            <span class="txtMenu">Enem</span>
+        </i>
+    </button>
+</mat-menu> -->
+
+
+
+<!-- <mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+
+</mat-drawer-container>
+ -->
+
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+    <br/><br/><br/>
+    <button mat-button (click)="home(); close('toggle button')" class="buttonMenu">
+      <i class="fas fa-home">&nbsp;
+        <span class="txtMenu">Home</span>
+      </i>
+    </button>
+    <br /><br/>
+    <button mat-button (click)="cursos(); close('toggle button')" class="buttonMenu">
+      <i class="fas fa-laptop-code">&nbsp;
+        <span class="txtMenu">Cursos</span>
+      </i>
+    </button>
+    <br /><br/>
+    <button mat-button (click)="medicinaProfissao(); close('toggle button')" class="buttonMenu">
+      <i class="fa fa-user-md">&nbsp;
+        <span class="txtMenu">Medicina</span>
+      </i>
+    </button>
+    <br /><br/>
+    <button (click)="enem(); close('toggle button')" class="buttonMenu">
+      <i class="fas fa-tasks">&nbsp;
+        <span class="txtMenu">Enem</span>
+      </i>
+    </button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p>
+      <br/>
+      <button mat-button (click)="sidenav.open()" class="btnMenuAbre">
+        <i class="material-icons" style="font-size:36px">menu</i>
+      </button>
+    </p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
