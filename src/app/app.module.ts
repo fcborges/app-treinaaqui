@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { EnemComponent } from './enem/enem.component';
 import {MatSidenavModule} from '@angular/material/sidenav'; 
+import {MatGridListModule} from '@angular/material/grid-list';
+import { LoginComponent } from './login/login.component'; 
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     ProfissaoMedicinaComponent,
     HomeComponent,
     CursosComponent,
-    EnemComponent
+    EnemComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     BrowserAnimationsModule,
     MatMenuModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent, MenuPrincipalComponent],

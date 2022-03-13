@@ -65,6 +65,7 @@
 </mat-drawer-container>
  -->
 
+ <br/>
 <mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
   <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
     <br/><br/><br/>
@@ -89,6 +90,7 @@
     <button (click)="enem(); close('toggle button')" class="buttonMenu">
       <i class="fas fa-tasks">&nbsp;
         <span class="txtMenu">Enem</span>
+        <a routerLink="/first-component" routerLinkActive="active"></a>
       </i>
     </button>
   </mat-sidenav>

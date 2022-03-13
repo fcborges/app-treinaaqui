@@ -29,6 +29,7 @@ export class MenuPrincipalComponent {
 
   enem() {
     this.router.navigate(['/enem']);
+    console.log("estou no menu ts");
   }
 
   cursos() {

@@ -9,6 +9,8 @@ export class EnemComponent {
 
   constructor() { }
 
-
+open(){
+  console.log("estou no enem ts");
+}
 
 }
