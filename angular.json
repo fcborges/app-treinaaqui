@@ -74,11 +74,11 @@
           "configurations": {
             "production": {
               "browserTarget": "app-treinaaqui:build:production",
-              "proxyConfig": "proxy.config.js"
+              "proxyConfig": "proxy.config.json"
             },
             "development": {
               "browserTarget": "app-treinaaqui:build:development",
-              "proxyConfig": "proxy.config.js"
+              "proxyConfig": "proxy.config.json"
             }
           },
           "defaultConfiguration": "development"

@@ -13,7 +13,14 @@ import { CursosComponent } from './cursos/cursos.component';
 import { EnemComponent } from './enem/enem.component';
 import {MatSidenavModule} from '@angular/material/sidenav'; 
 import {MatGridListModule} from '@angular/material/grid-list';
-import { LoginComponent } from './login/login.component'; 
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardUserComponent } from './board-user/board-user.component'; 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,12 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     CursosComponent,
     EnemComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    BoardUserComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +44,9 @@ import { LoginComponent } from './login/login.component';
     MatMenuModule,
     MatIconModule,
     MatSidenavModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent, MenuPrincipalComponent],
